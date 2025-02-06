@@ -96,7 +96,7 @@ def handle_attack(message):
                 target = command[1]
                 port = int(command[2])
                 time_duration = int(command[3])
-                if time_duration > 120:
+                if time_duration > 300:
                     response = "❌ **Error:** Time interval must be less than 120 Seconds."
                 else:
                     user_last_attack[user_id] = current_time
